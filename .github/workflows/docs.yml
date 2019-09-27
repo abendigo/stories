@@ -1,13 +1,13 @@
-name: Build Docker image
+name: Build and Publish Storybook
 
 on:
   push:
     branches:
       - master
 
-obs:
+jobs:
   build:
-    name: Generate API Docs
+    name: Generate Storybook
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
